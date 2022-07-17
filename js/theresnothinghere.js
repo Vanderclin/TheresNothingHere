@@ -1,7 +1,3 @@
-$(document).ready(function () {
-    $("#audio").get(0).play();
-});
-
 window.addEventListener('load', async () => {
     if ('serviceWorker' in navigator) {
         try {
@@ -9,29 +5,9 @@ window.addEventListener('load', async () => {
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
             const notificationPermission = await Notification.requestPermission();
             if (notificationPermission !== 'granted') {
-                console.log('Notification permission not granted');
+                document.getElementById("audio").play();
             } else {
-                const title = 'Welcome to the there\'s nothing here...';
-                const options = {
-                    body: 'Do you like this ?',
-                    icon: '../assets/astronaut.png',
-                    vibrate: [200, 100, 200, 100, 200, 100, 400],
-                    tag: 'request',
-                    actions: [
-                        {
-                            action: 'yes',
-                            title: 'Yes',
-                            icon: '../assets/astronaut.png'
-                        },
-                        {
-                            action: 'no',
-                            title: 'No',
-                            icon: '../assets/astronaut.png'
-                        }
-              ]
-                };
-                const res = await registration.showNotification(title, options);
-                console.log(res);
+                document.getElementById("audio").play();
             }
         } catch (err) {
             console.error(err);
