@@ -4,7 +4,7 @@ const filesToCache = [
   '/',
   'index.html',
   'assets/apple-touch-icon.png',
-  'assets/astronaut.png',
+  'assets/astro.png',
   'assets/favicon.ico',
   'assets/icon-192.png',
   'assets/icon-192-maskable.png',
