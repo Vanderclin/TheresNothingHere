@@ -2,22 +2,22 @@ const dataCacheName = 'pwa-test-data';
 const cacheName = 'pwa-test';
 const filesToCache = [
   '/',
-  '/index.html',
-  '/assets/apple-touch-icon.png',
-  '/assets/astronaut.png',
-  '/assets/favicon.ico',
-  '/assets/icon-192.png',
-  '/assets/icon-192-maskable.png',
-  '/assets/icon-512-maskable.png',
-  '/assets/icon-512-maskable.png',
-  '/css/bootstrap.css',
-  '/css/theresnothinghere.css',
-  '/js/vendor/jquery-3.6.0.min.js',
-  '/js/vendor/popper.min.js',
-  '/js/bootstrap.js',
-  '/js/bootstrap.js.map',
-  '/js/theresnothinghere.js',
-  '/js/theresnothinghere-sw.js'
+  'index.html',
+  'assets/apple-touch-icon.png',
+  'assets/astronaut.png',
+  'assets/favicon.ico',
+  'assets/icon-192.png',
+  'assets/icon-192-maskable.png',
+  'assets/icon-512-maskable.png',
+  'assets/icon-512-maskable.png',
+  'css/bootstrap.css',
+  'css/theresnothinghere.css',
+  'js/vendor/jquery-3.6.0.min.js',
+  'js/vendor/popper.min.js',
+  'js/bootstrap.js',
+  'js/bootstrap.js.map',
+  'js/theresnothinghere.js',
+  'js/theresnothinghere-sw.js'
 ];
 
 //install the sw
