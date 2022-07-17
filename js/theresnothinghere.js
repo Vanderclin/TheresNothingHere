@@ -1,3 +1,7 @@
+$(document).ready(function () {
+    $("#audio").get(0).play();
+});
+
 window.addEventListener('load', async () => {
     if ('serviceWorker' in navigator) {
         try {
