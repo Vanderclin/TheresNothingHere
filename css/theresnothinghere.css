@@ -19,9 +19,8 @@ img {
     margin-left: auto !important;
     margin-right: auto !important;
     margin-top: auto !important;
-    object-fit: scale-down;
     overflow: auto;
-    padding: 300px;
+    padding: 250px;
     position: absolute;
     right: 0;
     top: 0;
