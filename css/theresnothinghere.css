@@ -24,6 +24,10 @@ img {
     top: 0;
 }
 
+audio {
+    display: none;
+}
+
 h3 {
     align-content: center;
     align-items: center;
