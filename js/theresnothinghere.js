@@ -1,3 +1,5 @@
+var audio = new Audio("../assets/audio.ogg");
+
 window.addEventListener('load', async () => {
     if ('serviceWorker' in navigator) {
         try {
@@ -5,9 +7,9 @@ window.addEventListener('load', async () => {
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
             const notificationPermission = await Notification.requestPermission();
             if (notificationPermission !== 'granted') {
-                document.getElementById("audio").play();
+                audio.play();
             } else {
-                document.getElementById("audio").play();
+                audio.play();
             }
         } catch (err) {
             console.error(err);
