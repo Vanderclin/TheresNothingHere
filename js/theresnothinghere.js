@@ -63,8 +63,8 @@ function init() {
     particles = [];
 
     for (let i = 0; i < 450; i++) {
-        const canvasWidth = canvas.width + 300;
-        const canvasHeight = canvas.height + 300;
+        const canvasWidth = canvas.width + 400;
+        const canvasHeight = canvas.height + 400;
         const x = Math.random() * canvasWidth - canvasWidth / 2;
         const y = Math.random() * canvasHeight - canvasHeight / 2;
         const radius = 2 * Math.random();
