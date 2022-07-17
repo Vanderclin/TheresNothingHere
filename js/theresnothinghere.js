@@ -1,15 +1,13 @@
-var audio = new Audio("../assets/audio.ogg");
-
 window.addEventListener('load', async () => {
     if ('serviceWorker' in navigator) {
         try {
-            const registration = await navigator.serviceWorker.register('js/theresnothinghere-sw.js');
+            const registration = await navigator.serviceWorker.register('theresnothinghere-sw.js');
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
             const notificationPermission = await Notification.requestPermission();
             if (notificationPermission !== 'granted') {
-                audio.play();
+                // True
             } else {
-                audio.play();
+                // False
             }
         } catch (err) {
             console.error(err);
